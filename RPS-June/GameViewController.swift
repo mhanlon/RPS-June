@@ -31,27 +31,62 @@ class GameViewController: UIViewController {
         
         let cpuSign = randomSign()
         
+        let newState = userSign.gameState(against: cpuSign)
         
-        updateUI(state: .start)
+        updateUI(state: newState)
+        
+        signLabel.text = cpuSign.emoji
+
+        rockButton.isHidden = true
+        paperButton.isHidden = true
+        scissorsButton.isHidden = true
+        
+        rockButton.isEnabled = false
+        paperButton.isEnabled = false
+        scissorsButton.isEnabled = false
+        
+        switch userSign {
+            case .rock:
+                rockButton.isHidden = false
+            case .paper:
+                paperButton.isHidden = false
+            case .scissors:
+                scissorsButton.isHidden = false
+        }
+        
+        playAgainButton.isEnabled = true
+        playAgainButton.isHidden = false
     }
     
     
-    func updateUI(state: GameState) {
+    private func updateUI(state: GameState) {
         
         statusLabel.text = state.status
+        
         
         switch state {
             case .start:
                 signLabel.text = "👾"
                 playAgainButton.isHidden = true
                 playAgainButton.isEnabled = false
+                view.backgroundColor = .white
+                
+                rockButton.isHidden = false
+                paperButton.isHidden = false
+                scissorsButton.isHidden = false
+                
+                rockButton.isEnabled = true
+                paperButton.isEnabled = true
+                scissorsButton.isEnabled = true
                 
             case .win:
                 view.backgroundColor = UIColor(red: 0.651, green: 0.792, blue: 0.651, alpha: 1)
             case .lose:
                 view.backgroundColor = UIColor(red: 0.851, green: 0.424, blue: 0.412, alpha: 1)
+
             case .draw:
                 view.backgroundColor = UIColor(red: 0.663, green: 0.663, blue: 0.663, alpha: 1)
+
         }
         
     }
