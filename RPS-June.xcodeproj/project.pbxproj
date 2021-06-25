@@ -13,6 +13,8 @@
 		858303452684E86A0028AAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858303432684E86A0028AAF8 /* Main.storyboard */; };
 		858303472684E86B0028AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858303462684E86B0028AAF8 /* Assets.xcassets */; };
 		8583034A2684E86B0028AAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858303482684E86B0028AAF8 /* LaunchScreen.storyboard */; };
+		8587528A2685D40F0019FEB5 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858752892685D40F0019FEB5 /* Sign.swift */; };
+		8587528C2685D53B0019FEB5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587528B2685D53B0019FEB5 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		858303462684E86B0028AAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		858303492684E86B0028AAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8583034B2684E86B0028AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858752892685D40F0019FEB5 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		8587528B2685D53B0019FEB5 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.lex; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				858303462684E86B0028AAF8 /* Assets.xcassets */,
 				858303482684E86B0028AAF8 /* LaunchScreen.storyboard */,
 				8583034B2684E86B0028AAF8 /* Info.plist */,
+				858752892685D40F0019FEB5 /* Sign.swift */,
+				8587528B2685D53B0019FEB5 /* GameState.swift */,
 			);
 			path = "RPS-June";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				858303422684E86A0028AAF8 /* ViewController.swift in Sources */,
 				8583033E2684E86A0028AAF8 /* AppDelegate.swift in Sources */,
+				8587528C2685D53B0019FEB5 /* GameState.swift in Sources */,
+				8587528A2685D40F0019FEB5 /* Sign.swift in Sources */,
 				858303402684E86A0028AAF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
